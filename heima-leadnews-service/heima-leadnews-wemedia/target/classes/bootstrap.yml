@@ -1,0 +1,29 @@
+server:
+  port: 51803
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.130:8848
+      config:
+        server-addr: 192.168.200.130:8848
+        file-extension: yml
+minio:
+  accessKey: minio
+  secretKey: minio123
+  bucket: leadnews
+  endpoint: http://192.168.200.130:9000
+  readPath: http://192.168.200.130:9000
+
+aliyun:
+  accessKeyId: LTAI5tGEZ5NCjMn7weUYXfV1
+  secret: XudlqR6ipb4liMx7BW0Ef4tL81VL9R
+#  aliyun.scenes=porn,terrorism,ad,qrcode,live,logo
+  scenes: terrorism
+
+# 调用Ocr客户端方法时传入的参数
+tess4j:
+  data-path: E:/workspace/tessdata
+  language: chi_sim

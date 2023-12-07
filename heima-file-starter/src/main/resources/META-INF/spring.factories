@@ -1,0 +1,3 @@
+# 先于其他内容加载
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.heima.file.service.impl.MinIOFileStorageService
